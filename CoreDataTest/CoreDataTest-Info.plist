@@ -4,6 +4,11 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>UISupportedExternalAccessoryProtocols</key>
+	<array>
+		<string>com.datecs.linea.pro.bar</string>
+		<string>com.datecs.linea.pro.msr</string>
+	</array>
 	<key>CFBundleDisplayName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>

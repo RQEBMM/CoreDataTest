@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "CoreDataHelper.h"
+#import "Entity.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
@@ -20,6 +23,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+	UIViewController *rootVC = [[ViewController alloc] init];
+	self.window.rootViewController = rootVC;
+	
     return YES;
 }
 
@@ -63,6 +69,11 @@
             abort();
         } 
     }
+}
+
+- (NSManagedObjectContext *)mocMe
+{
+	return self.managedObjectContext;
 }
 
 #pragma mark - Core Data stack

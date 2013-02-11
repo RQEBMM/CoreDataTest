@@ -24,6 +24,13 @@
 		C8DBFC0016C95D0F008DD7A7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DBFBDF16C95D0F008DD7A7 /* CoreData.framework */; };
 		C8DBFC0816C95D0F008DD7A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8DBFC0616C95D0F008DD7A7 /* InfoPlist.strings */; };
 		C8DBFC0B16C95D0F008DD7A7 /* CoreDataTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DBFC0A16C95D0F008DD7A7 /* CoreDataTestTests.m */; };
+		C8DBFC1616C95D55008DD7A7 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DBFC1516C95D55008DD7A7 /* CoreDataHelper.m */; };
+		C8DBFC1916C95DF8008DD7A7 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DBFC1816C95DF8008DD7A7 /* Entity.m */; };
+		C8DBFC1B16C95ECA008DD7A7 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DBFC1516C95D55008DD7A7 /* CoreDataHelper.m */; };
+		C8DBFC1D16C96FCA008DD7A7 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DBFC1C16C96FCA008DD7A7 /* ExternalAccessory.framework */; };
+		C8DBFC2116C97051008DD7A7 /* LineaSDK.h in Sources */ = {isa = PBXBuildFile; fileRef = C8DBFC2016C9704B008DD7A7 /* LineaSDK.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C8DBFC2416C975A2008DD7A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DBFC2316C975A2008DD7A7 /* ViewController.m */; };
+		C8DBFC2816C982AA008DD7A7 /* libdtdev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DBFC2716C982AA008DD7A7 /* libdtdev.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,16 @@
 		C8DBFC0716C95D0F008DD7A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C8DBFC0916C95D0F008DD7A7 /* CoreDataTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataTestTests.h; sourceTree = "<group>"; };
 		C8DBFC0A16C95D0F008DD7A7 /* CoreDataTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestTests.m; sourceTree = "<group>"; };
+		C8DBFC1416C95D55008DD7A7 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		C8DBFC1516C95D55008DD7A7 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		C8DBFC1716C95DF8008DD7A7 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		C8DBFC1816C95DF8008DD7A7 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		C8DBFC1C16C96FCA008DD7A7 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		C8DBFC2016C9704B008DD7A7 /* LineaSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineaSDK.h; sourceTree = "<group>"; };
+		C8DBFC2216C975A2008DD7A7 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C8DBFC2316C975A2008DD7A7 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C8DBFC2716C982AA008DD7A7 /* libdtdev.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdtdev.a; sourceTree = "<group>"; };
+		C8DBFC2916C982BA008DD7A7 /* DTDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDevices.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +82,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8DBFC1D16C96FCA008DD7A7 /* ExternalAccessory.framework in Frameworks */,
 				C8DBFBDA16C95D0F008DD7A7 /* UIKit.framework in Frameworks */,
 				C8DBFBDC16C95D0F008DD7A7 /* Foundation.framework in Frameworks */,
 				C8DBFBDE16C95D0F008DD7A7 /* CoreGraphics.framework in Frameworks */,
 				C8DBFBE016C95D0F008DD7A7 /* CoreData.framework in Frameworks */,
+				C8DBFC2816C982AA008DD7A7 /* libdtdev.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +127,8 @@
 		C8DBFBD816C95D0F008DD7A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8DBFC2716C982AA008DD7A7 /* libdtdev.a */,
+				C8DBFC1C16C96FCA008DD7A7 /* ExternalAccessory.framework */,
 				C8DBFBD916C95D0F008DD7A7 /* UIKit.framework */,
 				C8DBFBDB16C95D0F008DD7A7 /* Foundation.framework */,
 				C8DBFBDD16C95D0F008DD7A7 /* CoreGraphics.framework */,
@@ -122,7 +143,11 @@
 			children = (
 				C8DBFBEA16C95D0F008DD7A7 /* AppDelegate.h */,
 				C8DBFBEB16C95D0F008DD7A7 /* AppDelegate.m */,
+				C8DBFC2216C975A2008DD7A7 /* ViewController.h */,
+				C8DBFC2316C975A2008DD7A7 /* ViewController.m */,
 				C8DBFBF316C95D0F008DD7A7 /* CoreDataTest.xcdatamodeld */,
+				C8DBFC1716C95DF8008DD7A7 /* Entity.h */,
+				C8DBFC1816C95DF8008DD7A7 /* Entity.m */,
 				C8DBFBE216C95D0F008DD7A7 /* Supporting Files */,
 			);
 			path = CoreDataTest;
@@ -131,6 +156,10 @@
 		C8DBFBE216C95D0F008DD7A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C8DBFC2016C9704B008DD7A7 /* LineaSDK.h */,
+				C8DBFC2916C982BA008DD7A7 /* DTDevices.h */,
+				C8DBFC1416C95D55008DD7A7 /* CoreDataHelper.h */,
+				C8DBFC1516C95D55008DD7A7 /* CoreDataHelper.m */,
 				C8DBFBE316C95D0F008DD7A7 /* CoreDataTest-Info.plist */,
 				C8DBFBE416C95D0F008DD7A7 /* InfoPlist.strings */,
 				C8DBFBE716C95D0F008DD7A7 /* main.m */,
@@ -270,9 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8DBFC2116C97051008DD7A7 /* LineaSDK.h in Sources */,
+				C8DBFC1B16C95ECA008DD7A7 /* CoreDataHelper.m in Sources */,
 				C8DBFBE816C95D0F008DD7A7 /* main.m in Sources */,
 				C8DBFBEC16C95D0F008DD7A7 /* AppDelegate.m in Sources */,
 				C8DBFBF516C95D0F008DD7A7 /* CoreDataTest.xcdatamodeld in Sources */,
+				C8DBFC1916C95DF8008DD7A7 /* Entity.m in Sources */,
+				C8DBFC2416C975A2008DD7A7 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8DBFC0B16C95D0F008DD7A7 /* CoreDataTestTests.m in Sources */,
+				C8DBFC1616C95D55008DD7A7 /* CoreDataHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +404,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreDataTest/CoreDataTest-Prefix.pch";
 				INFOPLIST_FILE = "CoreDataTest/CoreDataTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../OdinScanner/OdinScanner\"",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -381,6 +420,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreDataTest/CoreDataTest-Prefix.pch";
 				INFOPLIST_FILE = "CoreDataTest/CoreDataTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../OdinScanner/OdinScanner\"",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
